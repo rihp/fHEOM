@@ -24,8 +24,11 @@ def build_fmo_hamiltonian():
     Source: Adolphs, J., & Renger, T. (2006). How proteins trigger excitation
     energy transfer in the FMO complex of green sulfur bacteria. Biophysical
     Journal, 91(8), 2778–2797. DOI: 10.1529/biophysj.105.079483
+    
+    Returns Hamiltonian in rad/s (compatible with time in seconds).
     """
-    cm_to_rad_ps = 2 * np.pi * 29979245800 * 1e-12
+    # Convert cm^-1 to rad/s: ω = 2πcν where c = 2.998e10 cm/s
+    cm_to_rad_s = 2 * np.pi * 2.998e10  # rad/s per cm^-1
 
     # Site energies in cm^-1, from Table 1 in Adolphs & Renger (2006)
     site_energies_cm = np.array([
@@ -44,7 +47,8 @@ def build_fmo_hamiltonian():
     ])
 
     hamiltonian_cm = np.diag(site_energies_cm) + couplings_cm
-    hamiltonian = qt.Qobj(hamiltonian_cm * cm_to_rad_ps)
+    hamiltonian_rad_s = hamiltonian_cm * cm_to_rad_s
+    hamiltonian = qt.Qobj(hamiltonian_rad_s)
     return hamiltonian
 
 
