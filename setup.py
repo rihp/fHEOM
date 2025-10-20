@@ -10,7 +10,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="fHEOM",
-    version="1.0.0",
+    version="1.0.1",
     author="Roberto Ignacio Henriquez-Perozo",
     author_email="roberto@henriquezperozo.com",
     description="Low-rank factorization for efficient HEOM simulations of quantum coherence in biological systems",
