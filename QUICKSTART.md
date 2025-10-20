@@ -105,7 +105,7 @@ result = run_heom_simulation(
 | **Automatic rank selection** | Variance-threshold or manual |
 | **Multiple kernels** | Exponential, Gaussian, power-law |
 | **HEOM integration** | Works seamlessly with QuTiP |
-| **GPU ready** | Optional CuPy acceleration |
+| **CPU-based** | No GPU required |
 
 ## 📊 Computational Complexity
 
@@ -136,12 +136,13 @@ python examples/fheom_validation.py
 # 5. Concept visualization
 ```
 
-## 🐍 Python Requirements
+## 🐍 System Requirements
 
 - Python 3.8+
-- QuTiP 5.2+
-- NumPy, SciPy
-- Matplotlib (for visualization)
+- QuTiP 5.2+ (HEOM solver)
+- NumPy, SciPy (CPU-based operations)
+- Matplotlib (visualization)
+- No GPU or CUDA required
 
 ## 📖 Documentation
 

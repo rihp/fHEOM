@@ -2,7 +2,7 @@
 
 **Welcome to fHEOM (Factorized Hierarchical Equations of Motion)**
 
-This is the **complete, tested, and production-ready** implementation of a novel algorithm for GPU-accelerated simulation of quantum coherence in biological systems.
+This is the **complete, tested, and production-ready** implementation of low-rank factorization for efficient HEOM simulations of quantum coherence in biological systems.
 
 ---
 
@@ -162,9 +162,9 @@ result = get_factorized_bath(
 ## 🎓 System Requirements
 
 - **Python**: 3.8+
-- **QuTiP**: 5.2+
+- **QuTiP**: 5.2+ (HEOM solver)
 - **Dependencies**: NumPy, SciPy, Matplotlib
-- **Optional**: CuPy for GPU acceleration
+- **Hardware**: CPU-based, no GPU required
 
 ---
 
@@ -191,8 +191,8 @@ A: Yes! See examples in [README.md](README.md) and [QUICKSTART.md](QUICKSTART.md
 **Q: What's the memory overhead?**  
 A: From ~500 MB (full) down to ~10 MB (rank-3). See performance table above.
 
-**Q: Does it work with GPU?**  
-A: Yes! Optional CuPy support. See [README.md](README.md#-hardware-requirements)
+**Q: Does it require a GPU?**  
+A: No. Runs on standard CPU hardware. All operations use NumPy/SciPy.
 
 ---
 

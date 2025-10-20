@@ -228,17 +228,17 @@ All validation tests passing:
 - Engel, G. S., et al. (2007). "Evidence for wavelike energy transfer through quantum coherence." *Nature*, 446(7137), 782-786.
 - Adolphs, J., & Renger, T. (2006). "How proteins trigger excitation energy transfer in the FMO complex." *Biophys. J.*, 91(8), 2778-2797.
 
-## 💻 Hardware Requirements
+## 💻 System Requirements
 
-**Minimum (CPU)**:
+**Minimum**:
 - Python 3.8+
 - 4 GB RAM
-- 2-core CPU
+- CPU-based (no GPU required)
 
-**Recommended (GPU)**:
-- NVIDIA GPU (RTX 3000+ series)
-- CUDA 11.8+
-- 8+ GB VRAM
+**Dependencies**:
+- QuTiP 5.2+ (HEOM solver)
+- NumPy, SciPy (numerical operations)
+- Matplotlib (visualization)
 
 ## 📄 License
 
@@ -261,14 +261,13 @@ GitHub: [@rihp](https://github.com/rihp)
 
 We welcome contributions:
 - **Bug reports**: Issues with reproducibility or accuracy
-- **Performance optimization**: GPU kernel improvements
+- **Performance optimization**: Algorithmic improvements
 - **New systems**: Other well-characterized quantum biology models
 - **Validation**: Experimental comparisons
 
 ## Acknowledgments
 
 - **QuTiP Development Team**: Quantum Toolbox in Python
-- **NVIDIA**: cuQuantum GPU acceleration
 - **Experimental Groups**: Engel, Fleming, and others for FMO data
 - **Theory Community**: Tanimura, Ishizaki, Lambert for HEOM foundations
 

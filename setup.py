@@ -13,7 +13,7 @@ setup(
     version="1.0.0",
     author="Roberto Ignacio Henriquez-Perozo",
     author_email="roberto@henriquezperozo.com",
-    description="GPU-accelerated framework for simulating quantum coherence in biological systems",
+    description="Low-rank factorization for efficient HEOM simulations of quantum coherence in biological systems",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/rihp/fHEOM",
