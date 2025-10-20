@@ -1,5 +1,6 @@
 # fHEOM: Factorized Hierarchical Equations of Motion
 
+[![PyPI version](https://badge.fury.io/py/fHEOM.svg)](https://pypi.org/project/fHEOM/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![QuTiP 5.2+](https://img.shields.io/badge/QuTiP-5.2+-purple.svg)](https://qutip.org/)
@@ -48,10 +49,15 @@ fHEOM/
 
 ### Installation
 
+**From PyPI** (recommended):
 ```bash
-# Clone and install
+pip install fHEOM
+```
+
+**From source** (for development):
+```bash
 git clone https://github.com/rihp/fHEOM.git
-cd fheom
+cd fHEOM
 pip install -e .
 ```
 

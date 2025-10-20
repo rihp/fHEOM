@@ -4,6 +4,8 @@
 
 This is the **complete, tested, and production-ready** implementation of low-rank factorization for efficient HEOM simulations of quantum coherence in biological systems.
 
+**📦 Now available on PyPI:** `pip install fHEOM`
+
 ---
 
 ## 📖 Choose Your Path
@@ -32,13 +34,10 @@ This is the **complete, tested, and production-ready** implementation of low-ran
 ## ⚡ Quick Start (30 seconds)
 
 ```bash
-# 1. Install
-pip install -e .
+# 1. Install from PyPI
+pip install fHEOM
 
-# 2. Test
-python examples/fheom_validation.py
-
-# 3. Use
+# 2. Use immediately
 python -c "
 from fheom import get_factorized_bath
 from fheom.fmo import *
@@ -48,8 +47,17 @@ coords = get_site_coordinates()
 q_sites = [bath_operator() for _ in range(7)]
 
 result = get_factorized_bath(q_sites, coords, rank=3)
+print(f'✓ Reduced to {result.rank} modes')
 print(f'✓ Variance: {result.explained_variance:.1%}')
 "
+```
+
+**For development** (from source):
+```bash
+git clone https://github.com/rihp/fHEOM.git
+cd fHEOM
+pip install -e .
+python examples/fheom_validation.py  # Run validation suite
 ```
 
 ---

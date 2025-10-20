@@ -4,8 +4,7 @@
 
 ### Step 1: Install
 ```bash
-cd fHEOM
-pip install -e .
+pip install fHEOM
 ```
 
 ### Step 2: Import and Use
@@ -26,8 +25,11 @@ print(f"✓ Variance explained: {result.explained_variance:.1%}")
 print(f"✓ Error: {result.reconstruction_error:.4f}")
 ```
 
-### Step 3: Run Full Validation
+### Step 3: Run Full Validation (optional, for source install)
 ```bash
+# Clone repository first
+git clone https://github.com/rihp/fHEOM.git
+cd fHEOM
 python examples/fheom_validation.py
 ```
 Generates visualization at: `results/fheom_validation/fheom_concept.png`
